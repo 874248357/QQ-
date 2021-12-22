@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        background-color: #eff4fa;
+        width: 100%;
+        height: 62px;
+        border-bottom: 1px solid #d6dfea;
+      }
+
+      .header img {
+        height: 100%;
+        width: auto;
+        float: left;
+        overflow: hidden;
+      }
+
+      .header_link {
+        height: 30px;
+        width: auto;
+        font-size: 12px;
+        float: right;
+        color: #b6b6b6;
+        margin: 16px 0 0;
+        padding-right: 40px;
+      }
+
+      .header > .header_link > a {
+        color: #1d5494;
+        line-height: 30px;
+        text-decoration: none;
+      }
+
+      .main {
+        width: 960px;
+        height: 429px;
+        margin: 32px auto;
+        padding: 0 24px;
+      }
+
+      .content {
+        width: 915px;
+        height: 389px;
+        margin: 0 auto;
+        padding-top: 40px;
+        margin: 0 25px auto 20px;
+      }
+
+      .left {
+        float: left;
+        height: 400px;
+        width: 520px;
+        padding-top: 25px;
+      }
+
+      .title {
+        color: #6f95c8;
+        height: 26px;
+        margin: 15px 0;
+        font-size: 24px;
+      }
+
+      .words {
+        float: left;
+      }
+      .word {
+        font-size: 14px;
+        line-height: 24px;
+      }
+      .ending {
+        margin-top: 6px;
+        font-size: 12px;
+      }
+      .picture {
+        float: right;
+        margin: 15px 0;
+      }
+
+      .right {
+        width: 334px;
+        height: 387px;
+        float: right;
+        border-radius: 5px;
+        overflow: hidden;
+        border: #a0b1c4 1px solid;
+      }
+
+      .right_header {
+        background-color: #f9fbfe;
+        height: 50px;
+        border-bottom: #a0b1c4 1px solid;
+      }
+
+      .box1 {
+        float: left;
+        width: 50%;
+        font-size: 16px;
+        line-height: 50px;
+        color: #999;
+        text-align: center;
+      }
+
+      .box2 {
+        float: right;
+        width: 50%;
+        font-size: 16px;
+        line-height: 50px;
+        color: #333;
+        text-align: center;
+      }
+
+      .right_content {
+        width: 330px;
+        height: 336px;
+        margin: 36px 2px 0px 2px;
+      }
+
+      .box3,
+      .box4 {
+        padding: 10px 40px 10px 10px;
+        width: 232px;
+        height: 18px;
+        font-size: 14px;
+        border: 1px solid #96a5b4;
+        margin-left: 24px;
+        color: #999;
+        border-radius: 3px;
+      }
+
+      .box4 {
+        margin-top: 10px;
+        margin-bottom: 25px;
+      }
+
+      .box5 {
+        height: 16px;
+        width: 100%;
+        margin-left: 24px;
+        margin-bottom: 18px;
+      }
+
+      .box6 {
+        height: 16px;
+        width: 16px;
+        border: 1px solid #96a5b4;
+        float: left;
+      }
+
+      .box7 {
+        line-height: 18px;
+        width: auto;
+        margin-left: 5px;
+        font-size: 12px;
+        height: 18px;
+      }
+
+      .s1 {
+        display: block;
+        margin-left: 24px;
+        width: 285px;
+        height: 38px;
+        background-color: rgb(90, 152, 222);
+        font-size: 20px;
+        border-radius: 3px;
+        color: #d6dfea;
+        text-align: center;
+        line-height: 38px;
+        text-decoration: none;
+        margin-bottom: 20px;
+      }
+
+      .s2 {
+        display: block;
+        color: #1d5494;
+        font-size: 13px;
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 45px;
+      }
+
+      .s3,
+      .s4 {
+        font-size: 12px;
+        color: #1d5494;
+        display: inline;
+      }
+
+      .s3 {
+        float: left;
+        margin-left: 24px;
+      }
+
+      .s4 {
+        float: right;
+        margin-right: 20px;
+      }
+
+      .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 12px;
+        border-top: 1px solid #d6dfea;
+        background-color: #eff4fa;
+        height: 36px;
+        line-height: 36px;
+      }
+
+      .footer > a {
+        color: #1d5494;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img
+        src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbbs.yundui.cc%2Fdata%2Fattachment%2Fforum%2F201812%2F27%2F105940acr1kwz3s1iyiwwc.jpg&refer=http%3A%2F%2Fbbs.yundui.cc&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1642755065&t=7dbc7d5b98fe717e1eaf0cf5a8befe58"
+      />
+      <div class="header_link">
+        <a href="css:;">基本版</a>
+        "&nbsp;|&nbsp;"
+        <a href="css:;">English</a>
+        "&nbsp;|&nbsp;"
+        <a href="css:;">手机版</a>
+        "&nbsp;|&nbsp;"
+        <a href="css:;">企业邮箱</a>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="content">
+        <div class="left">
+          <div class="words">
+            <p class="title">QQ邮箱，常联系！</p>
+            <p class="word">到头来，</p>
+            <p class="word">我们记住的，</p>
+            <p class="word">不是敌人的攻击，</p>
+            <p class="word">而是朋友的沉默。</p>
+            <p class="word">— —马丁·路德·金</p>
+            <p class="ending">插画来自丑丑（两岁）</p>
+          </div>
+          <div class="picture">
+            <img
+              src="https://rescdn.qqmail.com/zh_CN/htmledition/images/webp/tg-silence1e9c5d.jpg"
+            />
+          </div>
+        </div>
+        <div class="right">
+          <div class="right_header">
+            <div class="box1">微信登录</div>
+            <div class="box2">QQ登录</div>
+          </div>
+          <div class="right_content">
+            <div class="box3">支持QQ号/邮箱/手机号登陆</div>
+            <div class="box4">QQ密码</div>
+            <div class="box5">
+              <div class="box6"></div>
+              <span class="box7">下次自动登录</span>
+            </div>
+            <a href="css:;" class="s1">登 录</a>
+            <a href="css:;" class="s2">扫码快捷登录</a>
+            <div class="s3">忘了密码？</div>
+            <div class="s4">注册新账号</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a href="css:;">关于腾讯</a>
+      <a href="css:;">服务条款</a>
+      <a href="css:;">隐私政策</a>
+      <a href="css:;">客服中心</a>
+      <a href="css:;">联系我们</a>
+      <a href="css:;">帮助中心</a>
+      <span>©1998 - 2021 Tencent Inc. All Rights Reserved.</span>
+    </div>
+  </body>
+</html>
